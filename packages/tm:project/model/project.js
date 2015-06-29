@@ -17,7 +17,18 @@ TM.Model.Project = {
 Projects.helpers(TM.Model.Project);
 
 _.extend(Projects, {
-
+  findById: function(projectId) {
+    return Projects.find({ _id: projectId });
+  },
+  findOneById: function(projectId) {
+    return Projects.findOne({ _id: projectId });
+  },
+  findByProjectStatus: function(projectStatus) {
+    return Projects.find({ open: projectStatus });
+  },
+  findOneByProjectStatus: function(projectStatus) {
+    return Projects.findOne({ open: projectStatus });
+  }
 });
 
 TM.Projects = Projects;

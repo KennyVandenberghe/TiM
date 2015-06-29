@@ -1,3 +1,3 @@
-TM.registerNamespace = function (ns, collection) {
-	TM.Namespaces[ns] = collection;
+TM.registerNamespace = function(ns, collection) {
+  TM.Namespaces[ns] = collection;
 };

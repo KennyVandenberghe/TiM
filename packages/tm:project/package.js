@@ -16,18 +16,18 @@ Package.onUse(function(api) {
       s = 'server',
       cs = [c, s];
 
-      api.use([
-        'tm:core',
-        'underscore',
-        'momentjs:moment',
-        'aldeed:collection2@2.3.3',
-        'dburles:collection-helpers@1.0.2',
-        'sewdn:collection-behaviours@0.2.0'
-      ], cs);
+  api.use([
+    'tm:core',
+    'underscore',
+    'momentjs:moment',
+    'aldeed:collection2@2.3.3',
+    'dburles:collection-helpers@1.0.2',
+    'sewdn:collection-behaviours@0.2.0'
+  ], cs);
 
-      api.addFiles([
-        'model/project.js'
-      ], cs);
+  api.addFiles([
+    'model/project.js'
+  ], cs);
 
-      api.export('Projects');
+  api.export('Projects');
 });
