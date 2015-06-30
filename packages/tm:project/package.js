@@ -25,9 +25,20 @@ Package.onUse(function(api) {
     'sewdn:collection-behaviours@0.2.0'
   ], cs);
 
+  api.use([
+    'ui',
+    'templating',
+    'iron:router@1.0.1'
+  ], c);
+
   api.addFiles([
     'model/project.js'
   ], cs);
+
+  api.addFiles([
+    'router.js',
+    'home.html'
+  ], c);
 
   api.export('Projects');
 });

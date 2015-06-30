@@ -25,6 +25,16 @@ Package.onUse(function(api) {
     'sewdn:collection-behaviours@0.2.0'
   ], cs);
 
+  api.use([
+    'ui',
+    'templating',
+    'iron:router'
+  ], c);
+
+  api.addFiles([
+    'router.js'
+  ], c);
+
   api.addFiles([
     'model/todo.js'
   ], cs);

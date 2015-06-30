@@ -18,7 +18,12 @@ Package.onUse(function(api) {
 
   api.use([
     'ui',
-    'templating'
+    'templating',
+    'iron:router@1.0.1'
+  ], c);
+
+  api.addFiles([
+    'layout.html'
   ], c);
 
   api.addFiles([
@@ -29,6 +34,10 @@ Package.onUse(function(api) {
   api.addFiles([
     'fixtures.js'
   ], s);
+
+  api.addFiles([
+    'router.js'
+  ], c);
 
   api.export('TM');
 });
