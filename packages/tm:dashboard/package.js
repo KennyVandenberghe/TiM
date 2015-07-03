@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'tm:project',
+  name: 'tm:dashboard',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -32,14 +32,8 @@ Package.onUse(function(api) {
   ], c);
 
   api.addFiles([
-    'model/project.js'
-  ], cs);
-
-  api.addFiles([
-    'components/project.html',
-    'components/project.js',
     'router.js',
+    'components/home.html',
+    'components/home.js'
   ], c);
-
-  api.export('Projects');
 });

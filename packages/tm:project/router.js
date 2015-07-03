@@ -1,11 +1,10 @@
-HomeController = RouteController.extend({
-  rootPane: 'home',
-  page: 'home'
+ProjectController = RouteController.extend({
+  page: 'projects'
 });
 
 Router.map(function() {
-  this.route('home', {
-    path: '/',
-    controller: HomeController
+  this.route('projects', {
+    path: '/projects',
+    controller: ProjectController
   });
 });

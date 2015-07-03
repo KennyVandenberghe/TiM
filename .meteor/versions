@@ -56,6 +56,7 @@ spacebars-compiler@1.0.6
 templating@1.1.1
 tm:app@0.0.1
 tm:core@0.0.1
+tm:dashboard@0.0.1
 tm:project@0.0.1
 tm:todo@0.0.1
 tracker@1.0.7

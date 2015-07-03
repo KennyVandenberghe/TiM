@@ -19,6 +19,7 @@ Package.onUse(function(api) {
   api.imply([
     'ui',
     'templating',
+    'tm:dashboard',
     'tm:core',
     'tm:todo',
     'tm:project'

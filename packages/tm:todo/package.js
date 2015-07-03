@@ -25,6 +25,10 @@ Package.onUse(function(api) {
     'sewdn:collection-behaviours@0.2.0'
   ], cs);
 
+  api.addFiles([
+    'model/todo.js'
+  ], cs);
+
   api.use([
     'ui',
     'templating',
@@ -32,12 +36,10 @@ Package.onUse(function(api) {
   ], c);
 
   api.addFiles([
+    'components/todo.html',
+    'components/todo.js',
     'router.js'
   ], c);
-
-  api.addFiles([
-    'model/todo.js'
-  ], cs);
 
   api.export('Todos');
 });
