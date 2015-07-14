@@ -1,5 +1,9 @@
 ProjectController = RouteController.extend({
-  page: 'projects'
+  page: 'projects',
+  onBeforeAction: function() {
+    Session.set('topbarTitle', 'Projects');
+    this.next();
+  }
 });
 
 Router.map(function() {

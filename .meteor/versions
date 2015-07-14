@@ -59,6 +59,7 @@ tm:core@0.0.1
 tm:dashboard@0.0.1
 tm:project@0.0.1
 tm:todo@0.0.1
+tm:topbar@0.0.1
 tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3

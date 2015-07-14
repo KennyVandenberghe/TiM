@@ -20,6 +20,7 @@ Package.onUse(function(api) {
     'ui',
     'templating',
     'tm:dashboard',
+    'tm:topbar',
     'tm:core',
     'tm:todo',
     'tm:project'

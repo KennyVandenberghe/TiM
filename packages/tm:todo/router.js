@@ -1,5 +1,9 @@
 TodoController = RouteController.extend({
-  page: 'todos'
+  page: 'todos',
+  onBeforeAction: function() {
+    Session.set('topbarTitle', "Todo's");
+    this.next();
+  }
 });
 
 Router.map(function() {

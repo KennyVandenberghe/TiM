@@ -1,6 +1,10 @@
 <template name="layout">
-	<a href="/">Home</a>
-	<a href="/projects">Projects</a>
-	<a href="/todos">Todos</a>
+	{{> head}}
+	{{> topbar}}
+	<div class="viewport">
+		<a href="/">Home</a>
+		<a href="/projects">Projects</a>
+		<a href="/todos">Todos</a>
+	</div>
 	{{> yield}}
 </template>

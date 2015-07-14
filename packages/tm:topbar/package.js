@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'tm:core',
+  name: 'tm:topbar',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -17,28 +17,18 @@ Package.onUse(function(api) {
       cs = [c, s];
 
   api.use([
-    'ui',
-    'templating',
-    'iron:router@1.0.1'
-  ], c);
-
-  api.addFiles([
-    'layout.html',
-    'head.html'
-  ], c);
-
-  api.addFiles([
-    'namespace.js',
-    'validators.js'
+    'tm:core',
+    'underscore',
+    'momentjs:moment',
   ], cs);
 
-  api.addFiles([
-    'fixtures.js'
-  ], s);
-
-  api.addFiles([
-    'router.js'
+  api.use([
+    'ui',
+    'templating',
   ], c);
 
-  api.export('TM');
+  api.addFiles([
+    'components/topbar.html',
+    'components/topbar.js',
+  ], c);
 });

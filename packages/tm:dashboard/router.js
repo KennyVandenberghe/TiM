@@ -1,5 +1,9 @@
 HomeController = RouteController.extend({
-  page: 'home'
+  page: 'home',
+  onBeforeAction: function() {
+    Session.set('topbarTitle', 'Home');
+    this.next();
+  }
 });
 
 Router.map(function() {
