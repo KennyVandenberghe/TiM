@@ -1,3 +1,3 @@
 #!/bin/bash
-. setupdb.sh
+. .setupdb.sh
 meteor

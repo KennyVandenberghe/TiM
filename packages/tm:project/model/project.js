@@ -11,7 +11,9 @@ TM.registerNamespace('project', Projects);
 CollectionBehaviours.extendCollectionInstance(Projects);
 
 TM.Model.Project = {
-
+  getNbTodos: function() {
+    return Todos.find({projectId: this._id}).count();
+  }
 };
 
 Projects.helpers(TM.Model.Project);
